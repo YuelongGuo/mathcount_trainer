@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Env files (keep template)
+.env
+.env.*
+!.env.example
+
+# Secrets and credentials
+*-firebase-adminsdk-*.json
+*credentials*.json
+client_secret*.json
+service-account*.json
+serviceAccount*.json
+
+# Keys, certs, and packaged extensions
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crx
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

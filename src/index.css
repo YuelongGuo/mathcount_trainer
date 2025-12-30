@@ -1,0 +1,40 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #1c2433;
+  background-color: #f4f0e6;
+
+  --bg: #f4f0e6;
+  --panel: #fff8ec;
+  --input: #fffdf6;
+  --ink: #1c2433;
+  --ink-muted: #5f6b7a;
+  --radius: 16px;
+  --shadow: 0 14px 35px rgba(28, 36, 51, 0.18);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 235, 204, 0.9), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(198, 244, 234, 0.7), transparent 45%),
+    linear-gradient(135deg, #f4f0e6, #f8f6f1);
+  color: var(--ink);
+}
+
+#root {
+  width: 360px;
+  padding: 18px;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "MathCounts Trainer Error Logger",
+  "version": "0.1.0",
+  "description": "Log incorrect answers from AoPS MathCounts Trainer to Firebase.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "MathCounts Logger"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://artofproblemsolving.com/mathcounts_trainer*"],
+  "content_scripts": [
+    {
+      "matches": ["https://artofproblemsolving.com/mathcounts_trainer*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com https://*.firebaseapp.com https://securetoken.googleapis.com https://identitytoolkit.googleapis.com https://www.googleapis.com"
+  }
+}
